@@ -34,9 +34,9 @@
     <!-- 项目的公开访问地址（如 GitHub 仓库页面） -->
     <url>https://github.com/KeithWang2019/kt-base-api.git</url>
     <!-- 只读连接（供他人拉取代码，scm:协议 + 仓库地址） -->
-    <connection>scm:git:https://github.com/KeithWang2019/kt-properties-utils.git</connection>
+    <connection>scm:git:https://github.com/KeithWang2019/kt-base-api.git</connection>
     <!-- 开发者可写连接（通常是 SSH 地址，供你推送代码） -->
-    <developerConnection>scm:git:git@github.com:KeithWang2019/kt-base-utils.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:KeithWang2019/kt-base-api.git</developerConnection>
     <!-- 当前标签（默认 HEAD，release 插件会自动替换为发布标签） -->
     <tag>kt-base-api-1.0.0</tag>
   </scm>
@@ -137,6 +137,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.11.3</version>
+        <!-- 忽略 Javadoc 警告（可选） -->
+        <configuration>
+          <sourcepath>${project.build.sourceDirectory}</sourcepath>
+          <additionalJOptions>-Xdoclint:none</additionalJOptions>
+        </configuration>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -144,12 +149,6 @@
             <goals>
               <goal>jar</goal>
             </goals>
-            <!-- 忽略 Javadoc 警告（可选） -->
-            <configuration>
-              <additionalJOptions>
-                <additionalJOption>-Xdoclint:none</additionalJOption>
-              </additionalJOptions>
-            </configuration>
           </execution>
         </executions>
       </plugin>

@@ -2,17 +2,17 @@
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-21",
-            "path": "C:\\opt\\java-21",
+            "path": "C:\\opt\\jdk-21.0.11+10",
             "default": true
         }
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "automatic",
     "terminal.integrated.env.windows": {
-        "JAVA_HOME": "C:\\opt\\java-21"
+        "JAVA_HOME": "C:\\opt\\jdk-21.0.11+10"
     },
     "maven.view": "hierarchical",
     "java.dependency.packagePresentation": "hierarchical",
     "maven.terminal.useJavaHome": true,
-    "java.jdt.ls.java.home": "C:\\opt\\java-21"
+    "java.jdt.ls.java.home": "C:\\opt\\jdk-21.0.11+10"
 }
