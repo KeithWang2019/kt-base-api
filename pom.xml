@@ -5,7 +5,7 @@
   <groupId>com.cangsg.brick</groupId>
   <artifactId>kt-base-api</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>kt-base-api</name>
   <description>积木组件的一部分，基础类，支持 Java 8+</description>
   <url>https://github.com/KeithWang2019</url>
