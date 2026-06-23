@@ -11,6 +11,9 @@ public class KtKeyList<T> {
     private String key;
     private List<T> value;
 
+    public KtKeyList() {
+    }
+
     public KtKeyList(String key, List<T> value) {
         this.key = key;
         this.value = value;
