@@ -9,6 +9,9 @@ public class KtKeyValue<T> {
     private String key;
     private T value;
 
+    public KtKeyValue() {
+    }
+
     public KtKeyValue(String key, T value) {
         this.key = key;
         this.value = value;
