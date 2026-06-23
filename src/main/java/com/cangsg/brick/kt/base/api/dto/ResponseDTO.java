@@ -1,4 +1,4 @@
-package com.cangsg.kt.brick.base.dto;
+package com.cangsg.brick.kt.base.api.dto;
 
 import lombok.Builder;
 import lombok.Data;
